@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.uta.cse.personaltutorservice.HomeFragment"
+    tools:context="edu.uta.cse.personaltutorservice.Fragments.HomeFragment"
     android:background="@mipmap/backgrounddesign5">
 
     <!-- TODO: Update blank fragment layout -->
@@ -40,6 +40,7 @@
     android:text="Quick Summary:"
     android:layout_below="@+id/userName"/>
             <include
+                android:id="@+id/quicksummary"
                 layout="@layout/services_list_item"
                 android:layout_width="wrap_content"
                 android:layout_height="120dp"
@@ -54,6 +55,14 @@
             android:id="@+id/logOutButton"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true" />
+
+        <Button android:id="@+id/btnNearbyPlaces"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Show Nearby Tutors"
+            android:layout_below="@+id/quicksummary"
+
+            />
 
 
 
